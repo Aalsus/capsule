@@ -1,6 +1,7 @@
 {
   "/not-found": "app/not-found.js",
+  "/constructor/page": "app/constructor/page.js",
   "/page": "app/page.js",
-  "/auth/page": "app/auth/page.js",
-  "/profile/[username]/page": "app/profile/[username]/page.js"
+  "/profile/[username]/page": "app/profile/[username]/page.js",
+  "/auth/page": "app/auth/page.js"
 }

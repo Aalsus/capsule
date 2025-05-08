@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface ClothingItem {
   id: string;
@@ -63,9 +64,11 @@ const Wardrobe: React.FC<WardrobeProps> = ({ items }) => {
     <div className="max-w-[1920px] mx-auto p-4">
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold">Мой гардероб</h1>
-        <button className="btn btn-primary">
-          Создать комплект
-        </button>
+        <Link href="/constructor">
+          <button className="btn btn-primary">
+            Создать комплект
+          </button>
+        </Link>
       </div>
       
       <CategorySection title="Верхняя одежда" items={categories.tops} />
